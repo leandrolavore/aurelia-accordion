@@ -31,8 +31,7 @@ accordion {
     width: 100%;
     position: absolute;
     z-index:100;
-    background-color: green;
-    top: 5%;
+    background-color: green;  
 }
 .delivery{
     display: block;
@@ -41,7 +40,6 @@ accordion {
     position: absolute;
     z-index:1000;
     background-color: blue;
-    top: 80%;
 }
 .confirm{
     display: block;
@@ -50,7 +48,6 @@ accordion {
     position: absolute;
     z-index:10000;
     background-color: orange;
-    top: 90%;
 }
 .card {
     border-radius: 20px;
