@@ -32,7 +32,7 @@ accordion {
     position: absolute;
     z-index:100;
     background-color: green;
-    top: 5%;
+    top: 70%;
 }
 .delivery{
     display: block;
@@ -68,4 +68,13 @@ h2{
     
     text-align: center;
     margin: auto;
+}
+.content {
+    display: block;
+    margin-top: 10em;
+    padding: 3em;
+    max-height: 0;
+}
+.active {
+    max-height: 100%;
 }
