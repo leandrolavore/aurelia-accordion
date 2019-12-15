@@ -20,7 +20,6 @@ accordion {
     display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
     z-index:10;
     background-color:red;
     margin: 0%;
@@ -29,10 +28,8 @@ accordion {
     display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
     z-index:100;
     background-color: green;
-    top: 70%;
 }
 .delivery{
     display: block;
@@ -41,16 +38,13 @@ accordion {
     position: absolute;
     z-index:1000;
     background-color: blue;
-    top: 80%;
 }
 .confirm{
     display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
     z-index:10000;
     background-color: orange;
-    top: 90%;
 }
 .card {
     border-radius: 20px;
@@ -71,10 +65,12 @@ h2{
 }
 .content {
     display: block;
-    margin-top: 10em;
-    padding: 3em;
+    box-sizing: content-box;
+    margin-top: 2em;
     max-height: 0;
+    overflow: hidden;
 }
 .active {
+    height: 70%;
     max-height: 100%;
 }

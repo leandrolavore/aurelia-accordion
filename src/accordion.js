@@ -1,20 +1,14 @@
 export class Accordion {
 
-    continue(event){
-        var targetCard = event.target.parentElement
-        var targetStyles = window.getComputedStyle(targetCard).top;
-        //var targetTop = targetStyles.getPropertyValue('top');
-        console.log(targetStyles)
-        //var cardToMove = targetCard.nextElementSibling
-        
-        
-        // var string = percentage.replace(/\%/g, "")
-        // var integer = parseInt(string, 10)
-        //debugger
-        
-        // cardToMove.style.top =  integer !== NaN 
-        //                             ? + 5 + '%' 
-        //                             : 5 + '%'
+    attached(){
+        document.querySelectorAll('button').forEach((button)=> {
+            button.addEventListener('click', function(){
+                var parent = button.parentElement
+                var uncle = parent.nextElementSibling
+                var uncleContent = uncle.querySelector('.content')
+                parent.classList.remove('active')
+                uncleContent.classList.add('active')
+            })
+        })
     }
-
 }
