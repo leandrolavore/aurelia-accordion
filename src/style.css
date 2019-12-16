@@ -1,12 +1,14 @@
 body, html {
-    height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 accordion {
     width: 100%;
 }
 .root{
     position: fixed;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(221, 238, 238);
     color: black;
     height: 100%;
@@ -15,66 +17,5 @@ accordion {
     border: 2px solid blue;
     z-index: 0;
     overflow: hidden;
-}
-.order{
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index:10;
-    background-color:red;
-    margin: 0%;
-} 
-.print{
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index:100;
-    background-color: green;
-    top: 70%;
-}
-.delivery{
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index:1000;
-    background-color: blue;
-    top: 80%;
-}
-.confirm{
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index:10000;
-    background-color: orange;
-    top: 90%;
-}
-.card {
-    border-radius: 20px;
-}
-button{
-    position: relative;
-    background-color: antiquewhite;
-    display: block;
-    width: 40%;
-    top: 55%;
-    margin: auto;
-    border-radius: 25px;
-}
-h2{
-    
-    text-align: center;
-    margin: auto;
-}
-.content {
-    display: block;
-    margin-top: 10em;
-    padding: 3em;
-    max-height: 0;
-}
-.active {
-    max-height: 100%;
+    align-items: stretch;
 }
