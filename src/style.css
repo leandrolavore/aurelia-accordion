@@ -7,6 +7,7 @@ accordion {
 }
 h2{
     margin: 0.1em auto 0.5em 0.1em;
+    color: grey;
 }
 .root{
     position: fixed;
@@ -17,7 +18,7 @@ h2{
     height: 90%;
     width: 40%;
     right: 0;
-    border: 2px solid blue;
+    border: 1px solid blue;
     z-index: 0;
     overflow: hidden;
     align-items: stretch;
@@ -33,23 +34,34 @@ h2{
 .card.active {
     flex-grow:1;
 }
-
+.card.active h2{
+    flex-grow:1;
+    color: black;
+}
 .order {
     position: relative;
-    z-index: 1;
 }
 
 .print {
     position: relative;
-    z-index: 10;
 }
 
 .delivery {
     position: relative;
-    z-index: 100;
 }
 
 .confirm {
     position: relative;
-    z-index: 1000;
+}
+.closeButton{
+    position: absolute;
+    z-index: 10;
+    right: 0.5em;
+    top: 0.5em;
+}
+.closeButton button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
 }

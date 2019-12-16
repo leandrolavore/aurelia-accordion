@@ -1,12 +1,12 @@
 <template>
 <require from="style.css"></require>
 <div>
-    <input type="number">
+    <input type="number" value.bind="input">
 </div>
 <div class='root'>
-    <div class='order card active'>
+    <div if.bind="firstTab" class="closeButton"><button click.trigger="closeAccordion()">x</button></div>
+    <div class.bind="'order '+'card '+'active'">
         <h2>order</h2>
-        
         <div class='content'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, commodi. 
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
@@ -15,9 +15,8 @@
             <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
-    <div class='print card'>
+    <div class.bind="'print '+'card '">
         <h2>print</h2>
-        
         <div class='content'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, commodi. 
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
@@ -26,9 +25,8 @@
             <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
-    <div class='delivery card'>
+    <div class.bind="'delivery '+'card '">
         <h2>delivery</h2>
-        
         <div class='content'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, commodi. 
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
@@ -37,9 +35,8 @@
             <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
-    <div class='confirm card'>
+    <div class.bind="'confirm '+'card '">
         <h2>confirm</h2>
-        
         <div class='content'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, commodi. 
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
