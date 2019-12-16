@@ -1,7 +1,9 @@
 <template>
 <require from="style.css"></require>
+<div>
+    <input type="number">
+</div>
 <div class='root'>
-
     <div class='order card active'>
         <h2>order</h2>
         
@@ -10,6 +12,7 @@
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
             impedit quos optio similique! Impedit, asperiores incidunt quibusdam ipsam eos reprehenderit.
             <button click.delegate="continue($event)">continue</button>
+            <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
     <div class='print card'>
@@ -20,6 +23,7 @@
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
             impedit quos optio similique! Impedit, asperiores incidunt quibusdam ipsam eos reprehenderit.
             <button click.delegate="continue($event)">continue</button>
+            <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
     <div class='delivery card'>
@@ -30,6 +34,7 @@
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
             impedit quos optio similique! Impedit, asperiores incidunt quibusdam ipsam eos reprehenderit.
             <button click.delegate="continue($event)">continue</button>
+            <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
     <div class='confirm card'>
@@ -40,6 +45,7 @@
             Numquam deserunt quas, officiis, corporis ab sed soluta pariatur, 
             impedit quos optio similique! Impedit, asperiores incidunt quibusdam ipsam eos reprehenderit.
             <button click.delegate="continue($event)">continue</button>
+            <button click.delegate="previous($event)">previous</button>
         </div>
     </div>
 
